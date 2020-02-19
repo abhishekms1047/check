@@ -63,7 +63,6 @@ services:
       - redis
       - pender
       - alegre
-      - vframe
     volumes:
       - "./check-api:/app"
     environment:
@@ -140,16 +139,6 @@ services:
       BOILERPLATE_ENV: dev
       ALEGRE_PORT: 3100
       REDIS_DATABASE: 2
-  vframe:
-    build: vframe
-    volumes:
-      - "./vframe:/root/vframe"
-    env_file:
-      - vframe/.env_file
-    depends_on:
-      - postgres
-    ports:
-      - "5000:5000"
   bots:
     build: check-bots
     volumes:

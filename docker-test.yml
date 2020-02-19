@@ -39,7 +39,3 @@ services:
       BOILERPLATE_ENV: test
       ALEGRE_PORT: 3100
       REDIS_DATABASE: 3
-  vframe:
-    environment:
-      DB_NAME: vframe_test
-      FLASK_ENV: test
