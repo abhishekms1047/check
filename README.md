@@ -23,8 +23,7 @@ This is a [Docker Compose](https://docs.docker.com/compose/) configuration that 
 - Check Slack Bot (container `bot`) at `check-bot/dist`, a ZIP file that should be deployed to AWS Lambda
 - Pender service API (container `pender`) at [http://localhost:3200/api](http://localhost:3200/api) - use `dev` as API key
 - Alegre service API (container `alegre`) at [http://localhost:3100](http://localhost:3100)
-- vFrame service API (container `vframe`) at [http://localhost:5000](http://localhost:5000)
-- Montage web client (container `montage`) at [http://localhost:8080](http://localhost:8080)
+- MinIO storage service UI (container `minio`) at [http://localhost:9000](http://localhost:9000) - use `AKIAIOSFODNN7EXAMPLE` / `wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY` to login
 - Elasticsearch API (container `elasticsearch`) at [http://localhost:9200](http://localhost:9200)
 - Kibana Elasticsearch UI (container `kibana`) at [http://localhost:5601](http://localhost:5601)
 - PostgreSQL (container `postgres`) at `localhost:5432` (use a standard Pg admin tool to connect)
@@ -64,8 +63,7 @@ This is a [Docker Compose](https://docs.docker.com/compose/) configuration that 
 - [Check web client](https://github.com/meedan/check-web)
 - [Pender service API](https://github.com/meedan/pender)
 - [Alegre service API](https://github.com/meedan/alegre)
-- [vFrame service API](https://github.com/meedan/vframe)
-- [Montage web client](https://github.com/meedan/montage-web)
+- [Check Slack bot](https://github.com/meedan/check-slack-bot)
 
 ## Troubleshooting and known issues
 
