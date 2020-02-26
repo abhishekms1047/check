@@ -12,7 +12,7 @@ This is a [Docker Compose](https://docs.docker.com/compose/) configuration that 
 - `git clone --recursive git@github.com:meedan/check.git && cd check`
 - Configuration: copy and edit the `*.example` files in the submodules
 - Update your [virtual memory settings](https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html), e.g. by setting `vm.max_map_count=262144` in `/etc/sysctl.conf`
-- `docker-compose build && docker-compose up`
+- `docker-compose build && docker-compose up --abort-on-container-exit`
 
 ## Available services and container names
 

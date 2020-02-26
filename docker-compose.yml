@@ -13,7 +13,7 @@ services:
       - "discovery.type=single-node"
       - "transport.host=127.0.0.1"
       - "xpack.security.enabled=false"
-      - "ALEGRE_URL=http://alegre:5000"
+      - "ALEGRE_URL=http://alegre:3100"
       - "cluster.name=docker-cluster"
       - "bootstrap.memory_lock=true"
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m -Dlog4j2.disable.jmx=true"
